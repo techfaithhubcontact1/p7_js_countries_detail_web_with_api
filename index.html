@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Countries Detail Web</title>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <link rel="stylesheet" href="css/style.css">
+          <script src="js/script.js" defer></script>
+     </head>
+     <body class="md light_md">
+          <header class="header_container md light_md">
+               <div class="header_heading">
+                    <img src="img/logo.png" alt="logo" title="Go to Home">
+                    <h2>Countries Detail</h2>
+               </div>
+               <div class="mode_elm">
+                    <i class="fa-regular fa-moon" title="For Dark Mode"></i>
+                    <i class="fa-regular fa-sun hide" title="For Light Mode"></i>
+               </div>
+          </header>
+          <main class="main_container">
+               <section class="search_filter">
+                    <aside class="search_elm light_md md">
+                         <input type="text" id="country" placeholder="EnterCountry" class="md light_md">
+                         <!-- <label for="country"> -->
+                              <i class="fa-solid fa-magnifying-glass search" title="Search Country"></i>
+                         <!-- </label> -->
+                    </aside>
+                    <aside class="filter_elm">
+                         <select name="select" id="select" class="md light_md">
+                              <option hidden>Filter By Region</option>
+                              <option value="Africa">Africa</option>
+                              <option value="America">America</option>
+                              <option value="Asia">Asia</option>
+                              <option value="Europe">Europe</option>
+                              <option value="Oceania">Oceania</option>
+                              <option value="All">All</option>
+                         </select>
+                    </aside>
+               </section>
+               <section class="cards_section"></section>
+          </main>
+     </body>
+</html>
